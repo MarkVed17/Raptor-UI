@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 @font-face {
   font-family: Jurassic Park;
-  src: url(JurassicPark-BL48.ttf);
+  src: url(/assets/JurassicPark-BL48.ttf);
 }
 
 :root {
@@ -10,6 +10,7 @@
   --subtitle-color: #808080;
   --card-bg-color: #27272785;
   --background-color: #101212;
+  --comp-card-border: #35353585;
 }
 
 html,
@@ -98,7 +99,7 @@ body {
   min-width: 400px;
   max-height: 250px;
   text-decoration: none;
-  border: 1px solid #35353585;
+  border: 1px solid var(--comp-card-border);
   border-radius: 12px;
 }
 

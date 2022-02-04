@@ -9,6 +9,7 @@
   --title-color: #cccccc;
   --subtitle-color: #808080;
   --background-color: #101212;
+  --btn-font-color: #ffffff;
 }
 
 html,
@@ -107,7 +108,7 @@ body {
   letter-spacing: 1px;
   word-spacing: 1px;
   padding: 0.5rem 1rem;
-  color: white;
+  color: var(--btn-font-color);
   background-color: var(--primary-color);
 }
 
