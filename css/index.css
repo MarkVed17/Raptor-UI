@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@font-face {
+  font-family: Jurassic Park;
+  src: url(/assets/JurassicPark-BL48.ttf);
+}
+
+:root {
+  --primary-color: #00919c;
+  --title-color: #cccccc;
+  --subtitle-color: #808080;
+  --background-color: #101212;
+  --btn-font-color: #ffffff;
+}
+
+html,
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Jurassic Park;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  background-color: var(--background-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.version {
+  font-size: 1.5rem;
+  margin-left: 8px;
+  color: var(--subtitle-color);
+}
+
+.header-nav-links {
+  margin-left: auto;
+}
+
+.header-nav-links > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-right: 10px;
+  font-size: 2rem;
+  color: var(--subtitle-color);
+}
+
+.header-link {
+  text-decoration: none;
+  color: var(--subtitle-color);
+  padding-bottom: 5px;
+}
+
+.header-link:hover {
+  border-bottom: 1.5px solid var(--subtitle-color);
+}
+
+.logo {
+  height: 20%;
+  width: 20%;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.logo-name {
+  font-size: 8rem;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  color: var(--title-color);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  max-width: 800px;
+  margin: auto auto;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.8rem;
+  word-spacing: 2px;
+  color: var(--subtitle-color);
+}
+
+.action-btn {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.start-btn {
+  border: none;
+  background: transparent;
+  font-family: Jurassic Park;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  padding: 0.5rem 1rem;
+  color: var(--btn-font-color);
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.start-btn:hover {
+  cursor: pointer;
+  background-color: #006f77;
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@font-face {
+  font-family: Jurassic Park;
+  src: url(/assets/JurassicPark-BL48.ttf);
+}
+
+:root {
+  --primary-color: #00919c;
+  --title-color: #cccccc;
+  --subtitle-color: #808080;
+  --card-bg-color: #27272785;
+  --background-color: #101212;
+  --comp-card-border: #35353585;
+}
+
+html,
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Jurassic Park;
+  letter-spacing: 1px;
+  background-color: var(--background-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+}
+
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
+
+.header-logo-img {
+  width: 48px;
+  height: 48px;
+  padding-left: 1rem;
+}
+
+.header-logo-name {
+  font-size: 2.5rem;
+  color: var(--title-color);
+  text-transform: lowercase;
+  padding-left: 6px;
+}
+
+.header-nav-links {
+  margin-left: auto;
+}
+
+.header-nav-links > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-right: 10px;
+  font-size: 2rem;
+  color: var(--subtitle-color);
+}
+
+.header-link {
+  text-decoration: none;
+  color: var(--subtitle-color);
+  padding-bottom: 5px;
+}
+
+.header-link:hover {
+  border-bottom: 1.5px solid var(--subtitle-color);
+}
+
+.page-title {
+  font-size: 6rem;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  color: var(--title-color);
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.component-card {
+  display: block;
+  min-width: 400px;
+  max-height: 250px;
+  text-decoration: none;
+  border: 1px solid var(--comp-card-border);
+  border-radius: 12px;
+}
+
+.component-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.component-name {
+  text-align: center;
+  background-color: var(--card-bg-color);
+  font-size: 2.3rem;
+  color: var(--title-color);
+  padding: 5px 0;
+  border-radius: 12px 12px 0 0;
+}
+
+.img-container {
+  height: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
