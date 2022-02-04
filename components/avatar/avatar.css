@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.avatars-container {
+  background-color: var(--comp-container-color);
+  width: 500px;
+  padding: 8px;
+}
+
+.avatar-round {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.avatar-lg {
+  height: 8rem;
+  width: 8rem;
+}
+
+.avatar-md {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.avatar-sm {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.avatar-xs {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.avatar-border {
+  border: 5px solid var(--base-gray-color);
+}
+
+.avatar-status {
+  position: relative;
+}
+
+.avatar-indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rounded-circle {
+  position: absolute;
+  top: 95px;
+  left: 95px;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  border: 5px solid var(--body-bg-color);
+}
+
+.rounded-circle.online {
+  background-color: var(--leaf-green-color);
+}
+
+.rounded-circle.offline {
+  background-color: var(--base-gray-color);
+}
+
+.avatar-anonymous {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.default-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: var(--primary-color);
+}
