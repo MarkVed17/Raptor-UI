@@ -1,0 +1,48 @@
+.badges-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: var(--comp-container-color);
+}
+
+.badge__demo {
+  font-size: 1.25rem;
+  position: relative;
+  width: fit-content;
+}
+
+.badge__demo-btn {
+  font-size: 1.25rem;
+  font-family: inherit;
+  background-color: var(--accent-color);
+  border-color: transparent;
+  padding: 5px 10px;
+  color: var(--ghost-color);
+  cursor: pointer;
+}
+
+.badge__demo-txt {
+  color: var(--font-color);
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: var(--secondary-color);
+  color: var(--ghost-color);
+  font-size: 1rem;
+  padding: 2.5px 8px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.badge-large {
+  font-size: 1.375rem;
+  padding: 2.5px 10px;
+}
+
+.badge-position {
+  margin: -10px;
+}

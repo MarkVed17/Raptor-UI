@@ -1,0 +1,94 @@
+@import url(/components/avatar/avatar.css);
+@import url(/components/badge/badge.css);
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@font-face {
+  font-family: Jurassic Park;
+  src: url(/assets/JurassicPark-BL48.ttf);
+}
+
+/* Colors */
+:root {
+  --primary-color: #00919c;
+  --secondary-color: #8b0000;
+  --accent-color: #ced02d;
+  --ghost-color: #ffffff;
+  --neutral-color: #cccccc;
+  --font-color: #cccccc;
+  --info-color: #111b26;
+  --success-color: #274916;
+  --warning-color: #594214;
+  --error-color: #58181c;
+  --body-bg-color: #101212;
+  --base-gray-color: #808080;
+  --leaf-green-color: #87d039;
+  --comp-container-color: #1d1d1d;
+}
+
+/* Reset */
+body,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Style*/
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: var(--body-bg-color);
+}
+
+/* Header */
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  font-family: Jurassic Park;
+  letter-spacing: 1px;
+}
+
+.header-logo-link {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
+
+.header-logo-img {
+  width: 3rem;
+  height: 3rem;
+  padding-left: 1rem;
+}
+
+.header-logo-name {
+  font-size: 2.5rem;
+  color: var(--font-color);
+  text-transform: lowercase;
+  padding-left: 6px;
+}
+
+.header-nav-links {
+  margin-left: auto;
+}
+
+.header-nav-links > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-right: 10px;
+  font-size: 2rem;
+  color: var(--base-gray-color);
+}
+
+.header-link {
+  text-decoration: none;
+  color: var(--base-gray-color);
+  padding-bottom: 5px;
+}
+
+.header-link:hover {
+  border-bottom: 1.5px solid var(--base-gray-color);
+}
