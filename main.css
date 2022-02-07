@@ -1,5 +1,7 @@
 @import url(/components/avatar/avatar.css);
 @import url(/components/badge/badge.css);
+@import url(/components/alert/alert.css);
+@import url(/components/button/button.css);
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
@@ -16,14 +18,18 @@
   --ghost-color: #ffffff;
   --neutral-color: #cccccc;
   --font-color: #cccccc;
-  --info-color: #111b26;
+  --info-color: #153450;
   --success-color: #274916;
   --warning-color: #594214;
-  --error-color: #58181c;
+  --danger-color: #58181c;
   --body-bg-color: #101212;
   --base-gray-color: #808080;
   --leaf-green-color: #87d039;
   --comp-container-color: #1d1d1d;
+  --primary-alert-color: #111b26;
+  --success-alert-color: #162312;
+  --warning-alert-color: #2b2111;
+  --danger-alert-color: #2a1215;
 }
 
 /* Reset */
@@ -58,8 +64,8 @@ body {
 }
 
 .header-logo-img {
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
   padding-left: 1rem;
 }
 

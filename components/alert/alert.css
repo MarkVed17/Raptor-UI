@@ -1,0 +1,44 @@
+.alerts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: var(--comp-container-color);
+}
+
+.alert {
+  width: 40%;
+  min-width: 18rem;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+}
+
+.alert-message {
+  padding-top: 5px;
+}
+
+.primary {
+  background-color: var(--primary-alert-color);
+  border: 1px solid var(--info-color);
+  color: var(--font-color);
+}
+
+.success {
+  background-color: var(--success-alert-color);
+  border: 1px solid var(--success-color);
+  color: var(--font-color);
+}
+
+.warning {
+  background-color: var(--warning-alert-color);
+  border: 1px solid var(--warning-color);
+  color: var(--font-color);
+}
+
+.danger {
+  background-color: var(--danger-alert-color);
+  border: 1px solid var(--danger-color);
+  color: var(--font-color);
+}
