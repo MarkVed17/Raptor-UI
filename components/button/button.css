@@ -23,63 +23,64 @@
 }
 
 /* Buttons with Brand Colors & Buttons with Active State & Buttons with an Outline & Buttons Disabled & Buttons with State Colors */
-.btn-brand-colors > button,
-.btn-active-state > button,
-.btn-outline > button,
-.btn-disabled > button,
-.btn-state-colors > button {
+.btn-brand,
+.btn-active-state,
+.btn-outline,
+.btn-disabled,
+.btn-state-colors {
   text-transform: uppercase;
   padding: 0.5rem 1rem;
 }
 
-.btn-brand-colors > .btn-neutral,
-.btn-active-state > .btn-neutral {
+.btn-brand.btn-neutral,
+.btn-active-state.btn-neutral {
   background-color: var(--neutral-color);
 }
 
-.btn-brand-colors > .btn-primary,
-.btn-active-state > .btn-primary {
+.btn-brand.btn-primary,
+.btn-active-state.btn-primary {
   background-color: var(--primary-color);
 }
 
-.btn-brand-colors > .btn-secondary,
-.btn-active-state > .btn-secondary {
+.btn-brand.btn-secondary,
+.btn-active-state.btn-secondary {
   background-color: var(--secondary-color);
 }
 
-.btn-brand-colors > .btn-accent,
-.btn-active-state > .btn-accent {
+.btn-brand.btn-accent,
+.btn-active-state.btn-accent {
   background-color: var(--accent-color);
 }
 
-.btn-brand-colors > .btn-ghost,
-.btn-active-state > .btn-ghost {
+.btn-brand.btn-ghost,
+.btn-active-state.btn-ghost {
   color: var(--ghost-color);
 }
 
-.btn-brand-colors > .btn-link > a,
-.btn-active-state > .btn-link > a {
+.btn-brand.btn-link > a,
+.btn-active-state.btn-link > a {
   text-decoration: none;
 }
 
 /* Buttons with Brand Colors on Hover*/
 
 /* Buttons with an Outline */
-.btn-outline > button.btn-neutral {
+.btn-outline.btn-neutral {
   border: 1px solid var(--neutral-color);
   color: var(--neutral-color);
 }
 
-.btn-outline > button.btn-primary {
+.btn-outline.btn-primary {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
 
-.btn-outline > button.btn-secondary {
+.btn-outline.btn-secondary {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
-.btn-outline > button.btn-accent {
+
+.btn-outline.btn-accent {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -87,41 +88,38 @@
 /* Buttons with an Outline on Hover */
 
 /* Buttons Disabled */
-.btn-disabled > button {
+.btn-disabled {
   background-color: var(--neutral-color);
 }
 
 /* Buttons Disabled on Hover*/
-.btn-disabled > button:hover {
+.btn-disabled:hover {
   cursor: not-allowed;
 }
 
 /* Buttons with State Colors */
-.btn-state-colors > button.btn-info {
+.btn-state-colors.btn-info {
   background-color: var(--info-color);
   color: var(--ghost-color);
 }
 
-.btn-state-colors > button.btn-success {
+.btn-state-colors.btn-success {
   background-color: var(--success-color);
   color: var(--ghost-color);
 }
 
-.btn-state-colors > button.btn-warning {
+.btn-state-colors.btn-warning {
   background-color: var(--warning-color);
   color: var(--ghost-color);
 }
-.btn-state-colors > button.btn-danger {
+
+.btn-state-colors.btn-danger {
   background-color: var(--danger-color);
   color: var(--ghost-color);
 }
 
 /* Circular Buttons with different Sizes */
-.btn-size {
-  padding: 1rem;
-}
-
-.circle > button {
+.circle {
   border-radius: 50%;
 }
 
@@ -184,19 +182,19 @@
 }
 
 /* Circular Buttons with different Sizes & Outline */
-.btn-circle-outline > button {
+.btn-circle-outline {
   border: 1px solid var(--primary-color);
   background: none;
 }
 
 /* Simple Buttons with different Sizes & Outline */
-.btn-simple-outline > button {
+.btn-simple-outline {
   border: 1px solid var(--primary-color);
   background: none;
 }
 
 /* Floating Action Buttons */
-.floating-action > button {
+.floating-action {
   background-color: var(--primary-color);
 }
 
