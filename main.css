@@ -2,6 +2,7 @@
 @import url(/components/badge/badge.css);
 @import url(/components/alert/alert.css);
 @import url(/components/button/button.css);
+@import url(/components/card/card.css);
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
@@ -30,6 +31,8 @@
   --success-alert-color: #162312;
   --warning-alert-color: #2b2111;
   --danger-alert-color: #2a1215;
+  --card-bg-color: #27272785;
+  --card-hover-color: #252525;
 }
 
 /* Reset */
