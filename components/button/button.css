@@ -1,0 +1,205 @@
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: var(--comp-container-color);
+  gap: 1rem;
+}
+
+/* Button */
+.btn {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: var(--ghost-color);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Buttons with Brand Colors & Buttons with Active State & Buttons with an Outline & Buttons Disabled & Buttons with State Colors */
+.btn-brand,
+.btn-active-state,
+.btn-outline,
+.btn-disabled,
+.btn-state-colors {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+.btn-brand.btn-neutral,
+.btn-active-state.btn-neutral {
+  background-color: var(--neutral-color);
+}
+
+.btn-brand.btn-primary,
+.btn-active-state.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-brand.btn-secondary,
+.btn-active-state.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-brand.btn-accent,
+.btn-active-state.btn-accent {
+  background-color: var(--accent-color);
+}
+
+.btn-brand.btn-ghost,
+.btn-active-state.btn-ghost {
+  color: var(--ghost-color);
+}
+
+.btn-brand.btn-link > a,
+.btn-active-state.btn-link > a {
+  text-decoration: none;
+}
+
+/* Buttons with Brand Colors on Hover*/
+
+/* Buttons with an Outline */
+.btn-outline.btn-neutral {
+  border: 1px solid var(--neutral-color);
+  color: var(--neutral-color);
+}
+
+.btn-outline.btn-primary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline.btn-secondary {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-outline.btn-accent {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Buttons with an Outline on Hover */
+
+/* Buttons Disabled */
+.btn-disabled {
+  background-color: var(--neutral-color);
+}
+
+/* Buttons Disabled on Hover*/
+.btn-disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Buttons with State Colors */
+.btn-state-colors.btn-info {
+  background-color: var(--info-color);
+  color: var(--ghost-color);
+}
+
+.btn-state-colors.btn-success {
+  background-color: var(--success-color);
+  color: var(--ghost-color);
+}
+
+.btn-state-colors.btn-warning {
+  background-color: var(--warning-color);
+  color: var(--ghost-color);
+}
+
+.btn-state-colors.btn-danger {
+  background-color: var(--danger-color);
+  color: var(--ghost-color);
+}
+
+/* Circular Buttons with different Sizes */
+.circle {
+  border-radius: 50%;
+}
+
+.circle-lg {
+  background-color: var(--base-gray-color);
+  padding: 1.25rem;
+  min-height: 4rem;
+}
+
+.circle-regular {
+  background-color: var(--base-gray-color);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  min-height: 3rem;
+}
+
+.circle-sm {
+  background-color: var(--base-gray-color);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  min-height: 2rem;
+}
+
+.circle-xs {
+  background-color: var(--base-gray-color);
+  padding: 1px;
+  min-height: 1rem;
+}
+
+/* Button with different Sizes */
+.simple-lg {
+  background-color: var(--base-gray-color);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  min-height: 4rem;
+  font-size: 1rem;
+}
+
+.simple-regular {
+  background-color: var(--base-gray-color);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  min-height: 3rem;
+  font-size: 1rem;
+}
+
+.simple-sm {
+  background-color: var(--base-gray-color);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  min-height: 2rem;
+  font-size: 1rem;
+}
+
+.simple-xs {
+  background-color: var(--base-gray-color);
+  min-height: 1rem;
+  font-size: 1rem;
+  padding: 0 0.2rem;
+}
+
+/* Circular Buttons with different Sizes & Outline */
+.btn-circle-outline {
+  border: 1px solid var(--primary-color);
+  background: none;
+}
+
+/* Simple Buttons with different Sizes & Outline */
+.btn-simple-outline {
+  border: 1px solid var(--primary-color);
+  background: none;
+}
+
+/* Floating Action Buttons */
+.floating-action {
+  background-color: var(--primary-color);
+}
+
+/* Center Material Icons */
+.material-icons {
+  vertical-align: middle;
+  text-align: center;
+}
