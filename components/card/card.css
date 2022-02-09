@@ -1,0 +1,218 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+}
+
+.card {
+  max-width: 22rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  color: var(--font-color);
+  background-color: var(--card-bg-color);
+  border: none;
+}
+
+.card__media {
+  height: 12.5rem;
+  width: 22rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__title {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.card__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card__primary,
+.card__secondary {
+  padding-left: 1rem;
+}
+
+.card__primary-action:hover {
+  cursor: pointer;
+  background-color: var(--card-hover-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__primary-action:hover img {
+  opacity: 0.5;
+}
+
+.card__secondary {
+  font-size: 0.97rem;
+  font-weight: 400;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card__action-buttons {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__action--button {
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card__action--button:hover {
+  border-radius: 0.25rem;
+  background-color: var(--body-bg-color);
+}
+
+.card__action--icon:hover {
+  background-color: var(--body-bg-color);
+}
+
+.card__action--icon {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.75rem;
+}
+
+/* Basic Card with Header */
+.card__primary-action {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-top-media {
+  order: 2;
+}
+
+.heading-top-title {
+  margin-bottom: 0;
+  order: 1;
+}
+
+.heading-top-secondary {
+  padding: 1rem 1rem 0.75rem;
+  order: 3;
+}
+
+/* Basic Card with Only Buttons */
+.hide-icon {
+  visibility: hidden;
+}
+
+/* Basic Card with Only Icons */
+.hide-button {
+  visibility: hidden;
+}
+
+/* Basic Card with Text Over Media */
+.title-over-media {
+  margin-bottom: 0;
+}
+
+.text-over-media {
+  margin-top: 0;
+}
+
+.card__text-over-media {
+  position: relative;
+}
+
+.card__primary-text-over-media {
+  position: absolute;
+  top: 7.5rem;
+  color: var(--ghost-color);
+}
+
+.card__secondary-text-over-media {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 1rem 1rem 0.75rem;
+}
+
+/* Horizontal Image and Text */
+.horizontal-img-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal-img-text-media {
+  height: 6.875rem;
+  width: 6.875rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__title__horizontal-img-text {
+  margin-bottom: 0.5rem;
+}
+
+.card__subtitle__horizontal-img-text {
+  margin-top: 0;
+}
+
+.card__secondary__horizontal-img-text {
+  display: none;
+}
+
+/* Basic Card with a dismiss icon */
+.dismissable-card {
+  position: relative;
+}
+
+.card-close {
+  position: absolute;
+  top: 0.5rem;
+  left: 20rem;
+  color: var(--ghost-color);
+  background-color: var(--body-bg-color);
+  border-radius: 50%;
+}
+
+.card-close:hover {
+  color: var(--body-bg-color);
+  background-color: var(--ghost-color);
+  cursor: pointer;
+}
+
+/* Basic Card with a badge */
+.badge-card {
+  position: relative;
+}
+
+.badge-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.badge-on-card {
+  position: absolute;
+  top: 1rem;
+  padding: 0 5px;
+  background-color: var(--accent-color);
+  color: var(--body-bg-color);
+}
+
+/* Icons common style */
+.material-icons {
+  vertical-align: middle;
+  color: var(--ghost-color);
+}

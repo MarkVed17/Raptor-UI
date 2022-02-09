@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <title>Cards</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <a href="/index.html" class="header-logo-link">
+        <img
+          class="header-logo-img"
+          src="/assets/jurassic-park-logo.png"
+          alt="jurassic-park-logo"
+        />
+        <p class="header-logo-name">Raptor UI</p>
+      </a>
+      <div class="header-nav-links">
+        <nav>
+          <ul>
+            <li><a href="#" class="header-link">Docs</a></li>
+            <li><a href="/components-list.html" class="header-link">Components</a></li>
+            <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="cards-container">
+      <!-- Basic Card-->
+    <div class="card">
+      <div
+        class="card__primary-action"
+      >
+        <img
+          class="card__media"
+          src="
+          /assets/t-rex-card.jpg
+          "
+        ></img>
+        <div class="card__primary">
+          <h2 class="card__title">
+            Tyrannosaurus Rex
+          </h2>
+          <h3
+            class="card__subtitle"
+          >
+            king of the tyrant lizards
+          </h3>
+        </div>
+        <div class="card__secondary">
+          Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+        </div>
+      </div>
+      <div class="card__actions">
+        <div class="card__action-buttons">
+          <button class="card__action--button">
+            Read
+          </button>
+          <button class="card__action--button">
+            Bookmark
+          </button>
+          <button
+            class="card__action--icon"
+            aria-pressed="false"
+            aria-label="Add to favorites"
+            title="Add to favorites"
+          >
+          <span class="material-icons">
+            favorite_border
+            </span>
+          </button>
+          <button
+            class="card__action--icon"
+            title="Share"
+          >
+          <span class="material-icons">
+            share
+            </span>
+          </button>
+          <button
+            class="card__action--icon"
+            title="More options"
+          >
+          <span class="material-icons">
+            more_vert
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Basic Card with Header -->
+    <div class="card">
+        <div
+          class="card__primary-action"
+        >
+          <img
+            class="card__media heading-top-media"
+            src="
+            /assets/trex-land-card.jpg
+            "
+          ></img>
+          <div class="card__primary">
+            <h2 class="card__title heading-top-title">
+              Tyrannosaurus Rex
+            </h2>
+            <h3
+              class="card__subtitle"
+            >
+              king of the tyrant lizards
+            </h3>
+          </div>
+          <div class="card__secondary heading-top-secondary">
+            Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+          </div>
+        </div>
+        <div class="card__actions">
+          <div class="card__action-buttons">
+            <button class="card__action--button">
+              Read
+            </button>
+            <button class="card__action--button">
+              Bookmark
+            </button>
+            <button
+              class="card__action--icon"
+              aria-pressed="false"
+              aria-label="Add to favorites"
+              title="Add to favorites"
+            >
+            <span class="material-icons">
+              favorite_border
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="Share"
+            >
+            <span class="material-icons">
+              share
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="More options"
+            >
+            <span class="material-icons">
+              more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basic Card with Only Buttons -->
+      <div class="card">
+        <div
+          class="card__primary-action"
+        >
+          <img
+            class="card__media"
+            src="
+            /assets/trex-last.jpg
+            "
+          ></img>
+          <div class="card__primary">
+            <h2 class="card__title">
+              Tyrannosaurus Rex
+            </h2>
+            <h3
+              class="card__subtitle"
+            >
+              king of the tyrant lizards
+            </h3>
+          </div>
+          <div class="card__secondary">
+            Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+          </div>
+        </div>
+        <div class="card__actions">
+          <div class="card__action-buttons">
+            <button class="card__action--button">
+              Read
+            </button>
+            <button class="card__action--button">
+              Bookmark
+            </button>
+            <button
+              class="card__action--icon hide-icon"
+              aria-pressed="false"
+              aria-label="Add to favorites"
+              title="Add to favorites"
+            >
+            <span class="material-icons">
+              favorite_border
+              </span>
+            </button>
+            <button
+              class="card__action--icon hide-icon"
+              title="Share"
+            >
+            <span class="material-icons">
+              share
+              </span>
+            </button>
+            <button
+              class="card__action--icon hide-icon"
+              title="More options"
+            >
+            <span class="material-icons">
+              more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basic Card with Only Icons -->
+      <div class="card">
+        <div
+          class="card__primary-action"
+        >
+          <img
+            class="card__media"
+            src="
+            /assets/t-rex-green.jpg
+            "
+          ></img>
+          <div class="card__primary">
+            <h2 class="card__title">
+              Tyrannosaurus Rex
+            </h2>
+            <h3
+              class="card__subtitle"
+            >
+              king of the tyrant lizards
+            </h3>
+          </div>
+          <div class="card__secondary">
+            Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+          </div>
+        </div>
+        <div class="card__actions">
+          <div class="card__action-buttons">
+            <button class="card__action--button hide-button">
+              Read
+            </button>
+            <button class="card__action--button hide-button">
+              Bookmark
+            </button>
+            <button
+              class="card__action--icon"
+              aria-pressed="false"
+              aria-label="Add to favorites"
+              title="Add to favorites"
+            >
+            <span class="material-icons">
+              favorite_border
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="Share"
+            >
+            <span class="material-icons">
+              share
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="More options"
+            >
+            <span class="material-icons">
+              more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basic Card with Text Over Media -->
+      <div class="card card__text-over-media">
+        <div
+          class="card__primary-action"
+        >
+          <img
+            class="card__media"
+            src="
+            /assets/tyrannosaurus_rex.jpg
+            "
+          ></img>
+          <div class="card__primary card__primary-text-over-media">
+            <h2 class="card__title title-over-media">
+              Tyrannosaurus Rex
+            </h2>
+            <h3
+              class="card__subtitle text-over-media"
+            >
+              king of the tyrant lizards
+            </h3>
+          </div>
+          <div class="card__secondary card__secondary-text-over-media">
+            Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+          </div>
+        </div>
+        <div class="card__actions">
+          <div class="card__action-buttons">
+            <button class="card__action--button">
+              Read
+            </button>
+            <button class="card__action--button">
+              Bookmark
+            </button>
+            <button
+              class="card__action--icon"
+              aria-pressed="false"
+              aria-label="Add to favorites"
+              title="Add to favorites"
+            >
+            <span class="material-icons">
+              favorite_border
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="Share"
+            >
+            <span class="material-icons">
+              share
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="More options"
+            >
+            <span class="material-icons">
+              more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Image and Text -->
+      <div class="card">
+        <div
+          class="card__primary-action horizontal-img-text"
+        >
+          <img
+            class="card__media horizontal-img-text-media"
+            src="
+            /assets/trex-small.jpg
+            "
+          ></img>
+          <div class="card__primary">
+            <h2 class="card__title card__title__horizontal-img-text">
+              Tyrannosaurus Rex
+            </h2>
+            <h3
+              class="card__subtitle card__subtitle__horizontal-img-text"
+            >
+              king of the tyrant lizards
+            </h3>
+          </div>
+          <div class="card__secondary card__secondary__horizontal-img-text">
+            Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+          </div>
+        </div>
+        <div class="card__actions">
+          <div class="card__action-buttons">
+            <button class="card__action--button">
+              Read
+            </button>
+            <button class="card__action--button">
+              Bookmark
+            </button>
+            <button
+              class="card__action--icon"
+              aria-pressed="false"
+              aria-label="Add to favorites"
+              title="Add to favorites"
+            >
+            <span class="material-icons">
+              favorite_border
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="Share"
+            >
+            <span class="material-icons">
+              share
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="More options"
+            >
+            <span class="material-icons">
+              more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>  
+
+      <!-- Basic Card with a dismiss icon -->
+      <div class="card dismissable-card">
+        <div
+          class="card__primary-action"
+        >
+          <img
+            class="card__media"
+            src="
+            /assets/trex-miniature.jpg
+            "
+          ></img>
+          <!-- CLose icon -->
+          <span class="material-icons card-close">
+            close
+            </span>
+          <div class="card__primary">
+            <h2 class="card__title">
+              Tyrannosaurus Rex
+            </h2>
+            <h3
+              class="card__subtitle"
+            >
+              king of the tyrant lizards
+            </h3>
+          </div>
+          <div class="card__secondary">
+            Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+          </div>
+        </div>
+        <div class="card__actions">
+          <div class="card__action-buttons">
+            <button class="card__action--button">
+              Read
+            </button>
+            <button class="card__action--button">
+              Bookmark
+            </button>
+            <button
+              class="card__action--icon"
+              aria-pressed="false"
+              aria-label="Add to favorites"
+              title="Add to favorites"
+            >
+            <span class="material-icons">
+              favorite_border
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="Share"
+            >
+            <span class="material-icons">
+              share
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="More options"
+            >
+            <span class="material-icons">
+              more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basic Card with a badge -->
+      <div class="card badge-card">
+        <div
+          class="card__primary-action"
+        >
+          <img
+            class="card__media"
+            src="
+            /assets/t-rex-side-view-card.jpg
+            "
+          ></img>
+          <span class="badge-on-card">
+            New
+            </span>
+          <div class="card__primary">
+            <h2 class="card__title">
+              Tyrannosaurus Rex
+            </h2>
+            <h3
+              class="card__subtitle"
+            >
+              king of the tyrant lizards
+            </h3>
+          </div>
+          <div class="card__secondary">
+            Tyrannosaurus rex was one of the most feracious predators to ever walk the Earth.
+          </div>
+        </div>
+        <div class="card__actions">
+          <div class="card__action-buttons">
+            <button class="card__action--button">
+              Read
+            </button>
+            <button class="card__action--button">
+              Bookmark
+            </button>
+            <button
+              class="card__action--icon"
+              aria-pressed="false"
+              aria-label="Add to favorites"
+              title="Add to favorites"
+            >
+            <span class="material-icons">
+              favorite_border
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="Share"
+            >
+            <span class="material-icons">
+              share
+              </span>
+            </button>
+            <button
+              class="card__action--icon"
+              title="More options"
+            >
+            <span class="material-icons">
+              more_vert
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </body>
+</html>
