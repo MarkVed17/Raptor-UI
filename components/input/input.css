@@ -1,0 +1,102 @@
+.inputs-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: var(--comp-container-color);
+}
+
+.input {
+  min-width: 20%;
+  text-indent: 5px;
+  outline-width: thin;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: var(--input-bg-color);
+  color: var(--ghost-color);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.standard {
+  border: 1px solid var(--input-border-color);
+  outline-width: thin;
+  outline-color: var(--input-outline-color);
+}
+
+.focus {
+  border: 1px solid var(--primary-color);
+}
+
+.input-label {
+  display: block;
+  width: fit-content;
+  padding-bottom: 8px;
+}
+
+.success-label,
+.success-message {
+  color: var(--input-valid-color);
+}
+
+.input.success {
+  border: 1px solid var(--input-valid-color);
+  color: var(--input-valid-color);
+}
+
+.input.success:focus {
+  outline: none;
+}
+
+.error-label,
+.error-message {
+  color: var(--input-error-color);
+}
+
+.input.error {
+  border: 1px solid var(--input-error-color);
+  color: var(--input-error-color);
+}
+
+.input.error:focus {
+  outline: none;
+}
+
+.large {
+  font-size: 1.5rem;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.std-search {
+  display: flex;
+}
+
+.std-search > input:focus {
+  outline: none;
+}
+
+.search-btn {
+  border: 1px solid var(--primary-color);
+}
+
+.material-icons {
+  display: inline-block;
+  color: var(--font-color);
+  vertical-align: middle;
+}

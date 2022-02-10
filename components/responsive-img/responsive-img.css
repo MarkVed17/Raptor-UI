@@ -1,0 +1,29 @@
+.images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: var(--comp-container-color);
+}
+
+.res-img {
+  width: 95%;
+  height: auto;
+}
+
+.res-round-img {
+  border-radius: 50%;
+  height: 35vh;
+  width: 35vh;
+}
+
+/* Media Query - Round Image */
+@media only screen and (min-width: 769px) {
+  .res-round-img {
+    height: 50vh;
+    width: 50vh;
+  }
+}

@@ -3,6 +3,8 @@
 @import url(/components/alert/alert.css);
 @import url(/components/button/button.css);
 @import url(/components/card/card.css);
+@import url(/components/input/input.css);
+@import url(/components/responsive-img/responsive-img.css);
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
@@ -33,6 +35,11 @@
   --danger-alert-color: #2a1215;
   --card-bg-color: #27272785;
   --card-hover-color: #252525;
+  --input-bg-color: #2e2e2e;
+  --input-border-color: #575757;
+  --input-outline-color: #222222;
+  --input-valid-color: #00ff84;
+  --input-error-color: #ff3a3d;
 }
 
 /* Reset */
