@@ -5,6 +5,8 @@
 @import url(/components/card/card.css);
 @import url(/components/input/input.css);
 @import url(/components/responsive-img/responsive-img.css);
+@import url(/components/navbar/navbar.css);
+@import url(/components/rating/rating.css);
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
@@ -40,6 +42,7 @@
   --input-outline-color: #222222;
   --input-valid-color: #00ff84;
   --input-error-color: #ff3a3d;
+  --rating-color: #ffff00;
 }
 
 /* Reset */

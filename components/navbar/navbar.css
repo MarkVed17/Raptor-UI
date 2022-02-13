@@ -1,0 +1,51 @@
+.navbar-container {
+  width: 80%;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: var(--comp-container-color);
+}
+
+/* Simple navbar */
+.simple-nav {
+  background-color: var(--body-bg-color);
+}
+
+/* Navbar with searchbar */
+.nav-search {
+  background-color: var(--body-bg-color);
+  gap: 5rem;
+}
+
+/* Searchbar*/
+.nav-searchbar {
+  width: 20rem;
+  height: 1rem;
+  border: 1px solid var(--input-outline-color);
+  background-color: var(--body-bg-color);
+}
+
+.nav-searchbar-btn {
+  height: 2.13rem;
+  padding: 0 0.5rem;
+  border: none;
+}
+
+/* Navbar with a menu & searchbar */
+.header-logo-img.header-menu {
+  padding: 0;
+}
+
+/* Navbar with a menu */
+.nav-menu {
+  gap: 1.2rem;
+}
+
+/* Navbar icons */
+.nav-search-icon {
+  color: var(--body-bg-color);
+}
+
+.nav-menu-icon {
+  color: var(--accent-color);
+  background-color: none;
+}

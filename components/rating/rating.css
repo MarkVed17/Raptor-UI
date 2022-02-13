@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  color: var(--font-color);
+}
+
+.rating-container {
+  background-color: var(--comp-container-color);
+  width: 60%;
+  padding: 1.5rem;
+}
+
+.format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-icon {
+  color: var(--rating-color);
+}
+
+.rating-sm > .rating-icon {
+  font-size: 1rem;
+}
+
+.rating-lg > .rating-icon {
+  font-size: 2rem;
+}
+
+.rating-xl > .rating-icon {
+  font-size: 2.5rem;
+}
