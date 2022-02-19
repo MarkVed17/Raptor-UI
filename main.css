@@ -5,8 +5,10 @@
 @import url(/components/card/card.css);
 @import url(/components/input/input.css);
 @import url(/components/responsive-img/responsive-img.css);
-@import url(/components/navbar/navbar.css);
+@import url(components/typography/typography.css);
 @import url(/components/rating/rating.css);
+@import url(/components/navbar/navbar.css);
+@import url(/components/typography/typography.css);
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
@@ -37,12 +39,12 @@
   --danger-alert-color: #2a1215;
   --card-bg-color: #27272785;
   --card-hover-color: #252525;
+  --rating-color: #ffff00;
   --input-bg-color: #2e2e2e;
   --input-border-color: #575757;
   --input-outline-color: #222222;
   --input-valid-color: #00ff84;
   --input-error-color: #ff3a3d;
-  --rating-color: #ffff00;
 }
 
 /* Reset */
@@ -57,6 +59,61 @@ ul {
 body {
   font-family: "PT Sans Narrow", sans-serif;
   background-color: var(--body-bg-color);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--font-color);
+}
+
+blockquote {
+  font-style: italic;
+  padding: 0rem 0.5rem;
+}
+
+.gray-text {
+  color: var(--base-gray-color);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+
+.secondary-text {
+  color: var(--secondary-color);
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
+
+.success-text {
+  color: var(--success-color);
+}
+
+.warning-text {
+  color: var(--warning-color);
+}
+
+.danger-text {
+  color: var(--danger-color);
+}
+
+.gray-text {
+  color: var(--base-gray-color);
 }
 
 /* Header */
