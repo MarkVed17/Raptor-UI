@@ -1,96 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Inputs</title>
-  </head>
-  <body>
-    <header class="header-nav">
-      <a href="/index.html" class="header-logo-link">
-        <img
-          class="header-logo-img"
-          src="/assets/jurassic-park-logo.png"
-          alt="jurassic-park-logo"
-        />
-        <p class="header-logo-name">Raptor UI</p>
-      </a>
-      <div class="header-nav-links">
-        <nav>
-          <ul>
-            <li><a href="#" class="header-link">Docs</a></li>
-            <li><a href="/components-list.html" class="header-link">Components</a></li>
-            <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="inputs-container">
-      <!-- Standard-Size Input -->
-      <div>
-        <input type="text" placeholder="Search..." class="input standard"/>
-      </div>
 
-      <!-- Focused Input -->
-      <div>
-        <input type="text" placeholder="Search..." class="input focus"/>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/main.css" />
+  <link href="/docs/docs.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Inputs</title>
+</head>
 
-      <!-- Valid Input -->
-      <div class="input-group">
-        <label class="success-label">Your name</label>
-        <input type="text" placeholder="John Doe" class="input success"/>
-        <p class="success-message"><strong>Alright!</strong> Username available!</p>
-      </div>
-
-      <!-- Invalid Input -->
-      <div class="input-group">
-        <label class="error-label">Your name</label>
-        <input type="text" placeholder="John Doe" class="input error"/>
-        <p class="error-message"><strong>Oops!</strong> Username already taken!</p>
-      </div>
-
-      <!-- Large-Size Input -->
-      <div>
-        <input type="text" placeholder="Search..." class="input standard large"/>
-      </div>
-
-      <!-- Small-Size Input -->
-      <div>
-        <input type="text" placeholder="Search..." class="input standard small"/>
-      </div>
-
-      <!-- Disabled Input -->
-      <div>
-        <input type="text" disabled="true" placeholder="Search..." class="input standard disabled"/>
-      </div>
-
-      <!-- Helper Text included in Input -->
-      <div>
-        <input type="text" placeholder="name@example.com" class="input standard"/>
-      </div>
-
-      <!-- Standard-Size Input with Search Icon -->
-      <div class="std-search">
-        <input type="text" placeholder="Search..." class="input standard"/>
-            <button class="btn btn-brand btn-primary search-btn">
-              <span class="material-icons">
-                search
-                </span>
-            </button>
-      </div>
-
-      <!-- Standard-Size Input with Search Button -->
-      <div class="std-search">
-        <input type="text" placeholder="Search..." class="input standard"/>
-          <button class="btn btn-brand btn-primary search-btn">Search</button>
-      </div>
-
-      </div>
+<body>
+  <header class="header-nav">
+    <a href="" class="header-logo-link">
+      <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
+      <p class="header-logo-name">Raptor UI</p>
+    </a>
+    <div class="header-nav-links">
+      <nav>
+        <ul>
+          <li><a href="/docs.html" class="header-link">Docs</a></li>
+          <li><a href="/components-list.html" class="header-link">Components</a></li>
+          <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
+        </ul>
+      </nav>
     </div>
-  </body>
+  </header>
+  <div class="container">
+    <!-- Input -->
+    <div class="component-headings">
+      <h1 class="component-name">Input</h1>
+      <p class="component-description">Retrieve text input from a user.</p>
+    </div>
+
+    <!-- Standard-Size Input -->
+    <h1>Basic Input</h1>
+    <div class="inputs-container">
+      <input type="text" placeholder="Search..." class="input standard" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltinput type="text" placeholder="Search..." class="input standard" /&gt</code>
+    </pre>
+
+    <!-- Focused Input -->
+    <h1>Input with a focus</h1>
+    <div class="inputs-container">
+      <input type="text" placeholder="Search..." class="input focus" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltinput type="text" placeholder="Search..." class="input focus" /&gt</code>
+    </pre>
+
+    <!-- Valid Input -->
+    <h1>Valid Input</h1>
+    <div class="inputs-container input-group">
+      <label class="success-label">Your name</label>
+      <input type="text" placeholder="John Doe" class="input success" />
+      <p class="success-message"><strong>Alright!</strong> Username available!</p>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="input-group">
+        &ltlabel class="success-label">Your name&lt/label&gt
+        &ltinput type="text" placeholder="John Doe" class="input success" /&gt
+        &ltp class="success-message"&gt&ltstrong&gtAlright!&lt/strong&gt Username available!&lt/p&gt
+      &lt/div&gt</code>
+    </pre>
+
+    <!-- Invalid Input -->
+    <h1>Invalid Input</h1>
+    <div class="inputs-container input-group">
+      <label class="error-label">Your name</label>
+      <input type="text" placeholder="John Doe" class="input error" />
+      <p class="error-message"><strong>Oops!</strong> Username already taken!</p>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="input-group"&gt
+        &ltlabel class="error-label"&gtYour name&lt/label&gt
+        &ltinput type="text" placeholder="John Doe" class="input error" /&gt
+        &ltp class="error-message"&gt&ltstrong&gtOops!&lt/strong&gt Username already taken!&lt/p&gt
+      &lt/div&gt</code>
+    </pre>
+
+    <!-- Large-Size Input -->
+    <h1>Large Size Input</h1>
+    <div class="inputs-container">
+      <input type="text" placeholder="Search..." class="input standard large" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltinput type="text" placeholder="Search..." class="input standard large" /&gt</code>
+    </pre>
+
+    <!-- Small-Size Input -->
+    <h1>Small Size Input</h1>
+    <div class="inputs-container">
+      <input type="text" placeholder="Search..." class="input standard small" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltinput type="text" placeholder="Search..." class="input standard small" /&gt</code>
+    </pre>
+
+    <!-- Disabled Input -->
+    <h1>Disabled Input</h1>
+    <div class="inputs-container">
+      <input type="text" disabled="true" placeholder="Search..." class="input standard disabled" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltinput type="text" disabled="true" placeholder="Search..." class="input standard disabled" /&gt</code>
+    </pre>
+
+    <!-- Helper Text included in Input -->
+    <h1>Input with a helper text</h1>
+    <div class="inputs-container">
+      <input type="text" placeholder="name@example.com" class="input standard" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltinput type="text" placeholder="name@example.com" class="input standard" /&gt</code>
+    </pre>
+
+    <!-- Standard-Size Input with Search Icon -->
+    <h1>Input with a search icon</h1>
+    <div class="std-search">
+      <input type="text" placeholder="Search..." class="input standard" />
+      <button class="btn btn-brand btn-primary search-btn">
+        <span class="material-icons">
+          search
+        </span>
+      </button>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="std-search"&gt
+        &ltinput type="text" placeholder="Search..." class="input standard" /&gt
+        &ltbutton class="btn btn-brand btn-primary search-btn"&gt
+          &ltspan class="material-icons"&gt
+            search
+          &lt/span&gt
+        &lt/button&gt
+      &lt/div&gt</code>
+    </pre>
+
+    <!-- Standard-Size Input with Search Button -->
+    <h1>Input with a search button</h1>
+    <div class="std-search">
+      <input type="text" placeholder="Search..." class="input standard" />
+      <button class="btn btn-brand btn-primary search-btn">Search</button>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="std-search"&gt
+        &ltinput type="text" placeholder="Search..." class="input standard" /&gt
+        &ltbutton class="btn btn-brand btn-primary search-btn"&gtSearch&lt/button&gt
+      &lt/div&gt</code>
+    </pre>
+
+  </div>
+
+  <!-- Prism JS -->
+  <script src="/docs/docs.js"></script>
+</body>
+
 </html>

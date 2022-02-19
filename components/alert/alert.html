@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Alerts</title>
-  </head>
-  <body>
-    <header class="header-nav">
-      <a href="/index.html" class="header-logo-link">
-        <img
-          class="header-logo-img"
-          src="/assets/jurassic-park-logo.png"
-          alt="jurassic-park-logo"
-        />
-        <p class="header-logo-name">Raptor UI</p>
-      </a>
-      <div class="header-nav-links">
-        <nav>
-          <ul>
-            <li><a href="#" class="header-link">Docs</a></li>
-            <li><a href="/components-list.html" class="header-link">Components</a></li>
-            <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/main.css" />
+  <link href="/docs/docs.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Alerts</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <a href="/index.html" class="header-logo-link">
+      <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
+      <p class="header-logo-name">Raptor UI</p>
+    </a>
+    <div class="header-nav-links">
+      <nav>
+        <ul>
+          <li><a href="/docs.html" class="header-link">Docs</a></li>
+          <li><a href="/components-list.html" class="header-link">Components</a></li>
+          <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Alert -->
+    <div class="component-headings">
+      <h1 class="component-name">Alert</h1>
+      <p class="component-description">Alert informs users about important events.</p>
+    </div>
+
     <div class="alerts-container">
       <div class="alert primary">
         <strong>Primary alert!</strong>
@@ -47,6 +54,34 @@
         <strong>Danger alert!</strong>
         <p class="alert-message">This is a danger alert with some content.</p>
       </div>
+
     </div>
-  </body>
+
+    <pre class="code"><code class="language-html">
+  &ltdiv class="alert primary"&gt
+    &ltstrong&gtPrimary alert!&lt/strong&gt
+    &ltp class="alert-message"&gtThis is a primary alert with some content.&lt/p&gt
+  &lt/div&gt
+  &ltdiv class="alert success"&gt
+    &ltstrong&gtSuccess alert!&lt/strong&gt
+    &ltp class="alert-message"&gt
+      This is a secondary alert with some content.
+    &lt/p&gt
+  &lt/div&gt
+  &ltdiv class="alert warning"&gt
+    &ltstrong&gtWarning alert!&lt/strong&gt
+    &ltp class="alert-message"&gtThis is a warning alert with some content.&lt/p&gt
+  &lt/div&gt
+  &ltdiv class="alert danger"&gt
+    &ltstrong&gtDanger alert!&lt/strong&gt
+    &ltp class="alert-message"&gtThis is a danger alert with some content.&lt/p&gt
+  &lt/div&gt</code>
+      </pre>
+  </div>
+
+
+  <!-- Prism JS -->
+  <script src="/docs/docs.js"></script>
+</body>
+
 </html>

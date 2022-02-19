@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Navbar</title>
-  </head>
-  <body>
-    <header class="header-nav">
-      <a href="/index.html" class="header-logo-link">
-        <img
-          class="header-logo-img"
-          src="/assets/jurassic-park-logo.png"
-          alt="jurassic-park-logo"
-        />
-        <p class="header-logo-name">Raptor UI</p>
-      </a>
-      <div class="header-nav-links">
-        <nav>
-          <ul>
-            <li><a href="#" class="header-link">Docs</a></li>
-            <li><a href="/components-list.html" class="header-link">Components</a></li>
-            <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="/main.css" />
+  <link href="/docs/docs.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Navbar</title>
+</head>
+
+<body>
+  <header class="header-nav">
+    <a href="/index.html" class="header-logo-link">
+      <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
+      <p class="header-logo-name">Raptor UI</p>
+    </a>
+    <div class="header-nav-links">
+      <nav>
+        <ul>
+          <li><a href="/docs.html" class="header-link">Docs</a></li>
+          <li><a href="/components-list.html" class="header-link">Components</a></li>
+          <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Navbar -->
+    <div class="component-headings">
+      <h1 class="component-name">Navbar</h1>
+      <p class="component-description">Navbar is used to show a navigation bar on the top of the page.</p>
+    </div>
+
+    <!-- Simple Navbar -->
+    <h1>Basic Navbar</h1>
     <div class="navbar-container">
-      <!-- Simple Navbar -->
       <header class="header-nav simple-nav">
         <a href="" class="header-logo-link">
-          <img
-            class="header-logo-img"
-            src="/assets/jurassic-park-logo.png"
-            alt="jurassic-park-logo"
-          />
+          <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
           <p class="header-logo-name">Raptor UI</p>
         </a>
         <div class="header-nav-links">
@@ -56,24 +56,35 @@
       </header>
     </div>
 
+    <pre class="code"><code class="language-html">
+&ltheader class="header-nav simple-nav"&gt
+  &lta href="" class="header-logo-link"&gt
+    &ltimg class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" /&gt
+    &ltp class="header-logo-name"&gtRaptor UI&lt/p&gt
+  &lt/a&gt
+  &ltdiv class="header-nav-links"&gt
+    &ltnav&gt
+      &ltul&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 1&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 2&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 3&lt/a&gt&lt/li&gt
+      &lt/ul&gt
+    &lt/nav&gt
+  &lt/div&gt
+&lt/header&gt</code>
+    </pre>
+
     <!-- Navbar with a searchbar -->
+    <h1>Navbar with a search</h1>
     <div class="navbar-container">
       <header class="header-nav nav-search">
         <a href="" class="header-logo-link">
-          <img
-            class="header-logo-img"
-            src="/assets/jurassic-park-logo.png"
-            alt="jurassic-park-logo"
-          />
+          <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
           <p class="header-logo-name">Raptor UI</p>
         </a>
 
         <div class="std-search">
-          <input
-            type="text"
-            placeholder="Search..."
-            class="input standard nav-searchbar"
-          />
+          <input type="text" placeholder="Search..." class="input standard nav-searchbar" />
           <button class="btn btn-brand btn-accent search-btn nav-searchbar-btn">
             <span class="material-icons nav-search-icon"> search </span>
           </button>
@@ -90,19 +101,42 @@
         </div>
       </header>
     </div>
+
+    <pre class="code"><code class="language-html">
+&ltheader class="header-nav nav-search"&gt
+  &lta href="" class="header-logo-link"&gt
+    &ltimg class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" /&gt
+    &ltp class="header-logo-name"&gtRaptor UI&lt/p&gt
+  &lt/a&gt
+
+  &ltdiv class="std-search"&gt
+    &ltinput type="text" placeholder="Search..." class="input standard nav-searchbar" /&gt
+    &ltbutton class="btn btn-brand btn-accent search-btn nav-searchbar-btn"&gt
+      &ltspan class="material-icons nav-search-icon"&gt search &lt/span&gt
+    &lt/button&gt
+  &lt/div&gt
+
+  &ltdiv class="header-nav-links"&gt
+    &ltnav&gt
+      &ltul&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 1&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 2&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 3&lt/a&gt&lt/li&gt
+      &lt/ul&gt
+    &lt/nav&gt
+  &lt/div&gt
+&lt/header&gt</code>
+    </pre>
 
     <!-- Navbar with a menu -->
+    <h1>Navbar with a menu</h1>
     <div class="navbar-container">
       <header class="header-nav nav-search nav-menu">
         <button class="btn nav-menu-btn">
           <span class="material-icons nav-menu-icon"> menu </span>
         </button>
         <a href="" class="header-logo-link">
-          <img
-            class="header-logo-img header-menu"
-            src="/assets/jurassic-park-logo.png"
-            alt="jurassic-park-logo"
-          />
+          <img class="header-logo-img header-menu" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
           <p class="header-logo-name">Raptor UI</p>
         </a>
 
@@ -118,27 +152,42 @@
       </header>
     </div>
 
+    <pre class="code"><code class="language-html">
+&ltheader class="header-nav nav-search nav-menu">
+  &ltbutton class="btn nav-menu-btn">
+    &ltspan class="material-icons nav-menu-icon"> menu &lt/span>
+  &lt/button>
+  &lta href="" class="header-logo-link">
+    &ltimg class="header-logo-img header-menu" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
+    &ltp class="header-logo-name">Raptor UI&lt/p>
+  &lt/a>
+
+  &ltdiv class="header-nav-links">
+    &ltnav>
+      &ltul>
+        &ltli>&lta href="#" class="header-link">link 1&lt/a>&lt/li>
+        &ltli>&lta href="#" class="header-link">link 2&lt/a>&lt/li>
+        &ltli>&lta href="#" class="header-link">link 3&lt/a>&lt/li>
+      &lt/ul>
+    &lt/nav>
+  &lt/div>
+&lt/header></code>
+    </pre>
+
     <!-- Navbar with a menu & searchbar -->
+    <h1>Navbar with a menu and search</h1>
     <div class="navbar-container">
       <header class="header-nav nav-search nav-menu">
         <button class="btn nav-menu-btn">
           <span class="material-icons nav-menu-icon"> menu </span>
         </button>
         <a href="" class="header-logo-link">
-          <img
-            class="header-logo-img header-menu"
-            src="/assets/jurassic-park-logo.png"
-            alt="jurassic-park-logo"
-          />
+          <img class="header-logo-img header-menu" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
           <p class="header-logo-name">Raptor UI</p>
         </a>
 
         <div class="std-search">
-          <input
-            type="text"
-            placeholder="Search..."
-            class="input standard nav-searchbar"
-          />
+          <input type="text" placeholder="Search..." class="input standard nav-searchbar" />
           <button class="btn btn-brand btn-accent search-btn nav-searchbar-btn">
             <span class="material-icons nav-search-icon"> search </span>
           </button>
@@ -155,5 +204,40 @@
         </div>
       </header>
     </div>
-  </body>
+
+    <pre class="code"><code class="language-html">
+&ltheader class="header-nav nav-search nav-menu"&gt
+  &ltbutton class="btn nav-menu-btn"&gt
+    &ltspan class="material-icons nav-menu-icon"&gt menu &lt/span&gt
+  &lt/button&gt
+  &lta href="" class="header-logo-link"&gt
+    &ltimg class="header-logo-img header-menu" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" /&gt
+    &ltp class="header-logo-name"&gtRaptor UI&lt/p&gt
+  &lt/a&gt
+
+  &ltdiv class="std-search"&gt
+    &ltinput type="text" placeholder="Search..." class="input standard nav-searchbar" /&gt
+    &ltbutton class="btn btn-brand btn-accent search-btn nav-searchbar-btn"&gt
+      &ltspan class="material-icons nav-search-icon"&gt search &lt/span&gt
+    &lt/button&gt
+  &lt/div&gt
+
+  &ltdiv class="header-nav-links"&gt
+    &ltnav&gt
+      &ltul&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 1&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 2&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href="#" class="header-link"&gtlink 3&lt/a&gt&lt/li&gt
+      &lt/ul&gt
+    &lt/nav&gt
+  &lt/div&gt
+&lt/header&gt</code>
+    </pre>
+  </div>
+
+
+  <!-- Prism JS -->
+  <script src="/docs/docs.js"></script>
+</body>
+
 </html>
