@@ -1,88 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Rating</title>
-  </head>
-  <body>
-    <header class="header-nav">
-      <a href="/index.html" class="header-logo-link">
-        <img
-          class="header-logo-img"
-          src="/assets/jurassic-park-logo.png"
-          alt="jurassic-park-logo"
-        />
-        <p class="header-logo-name">Raptor UI</p>
-      </a>
-      <div class="header-nav-links">
-        <nav>
-          <ul>
-            <li><a href="#" class="header-link">Docs</a></li>
-            <li><a href="/components-list.html" class="header-link">Components</a></li>
-            <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="container">
-      <!-- Basic Rating -->
-      <div class="rating-container format">
-        <div class="rating simple">
-          <span class="material-icons rating-icon"> star_border </span>
-        </div>
-      </div>
 
-      <!-- Ratings - Small -->
-      <div class="rating-container format">
-        <div class="rating-sm">
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star_border </span>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="/main.css" />
+  <link href="/docs/docs.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Rating</title>
+</head>
 
-      <!-- Ratings - Regular -->
-      <div class="rating-container format">
-        <div class="rating sm">
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-        </div>
-      </div>
+<body>
+  <header class="header-nav">
+    <a href="/index.html" class="header-logo-link">
+      <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
+      <p class="header-logo-name">Raptor UI</p>
+    </a>
+    <div class="header-nav-links">
+      <nav>
+        <ul>
+          <li><a href="/docs.html" class="header-link">Docs</a></li>
+          <li><a href="/components-list.html" class="header-link">Components</a></li>
+          <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <!-- Rating -->
+    <div class="component-headings">
+      <h1 class="component-name">Rating</h1>
+      <p class="component-description">Rating is a set of radio buttons that allow the user to rate something.</p>
+    </div>
 
-      <!-- Ratings - Large -->
-      <div class="rating-container format">
-        <div class="rating-lg">
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star_half </span>
-          <span class="material-icons rating-icon"> star_border </span>
-        </div>
-      </div>
-
-      <!-- Ratings - Massive -->
-      <div class="rating-container format">
-        <div class="rating-xl">
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star </span>
-          <span class="material-icons rating-icon"> star_border </span>
-          <span class="material-icons rating-icon"> star_border </span>
-        </div>
+    <!-- Basic Rating -->
+    <h1>Basic Rating</h1>
+    <div class="rating-container format">
+      <div class="rating simple">
+        <span class="material-icons rating-icon"> star_border </span>
       </div>
     </div>
-  </body>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="rating-container format"&gt
+        &ltdiv class="rating simple"&gt
+          &ltspan class="material-icons rating-icon"&gt star_border &lt/span&gt
+        &lt/div&gt</code>
+    </pre>
+
+    <!-- Ratings - Small -->
+    <h1>Rating Size - Small</h1>
+    <div class="rating-container format">
+      <div class="rating-sm">
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star_border </span>
+      </div>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="rating-sm"&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star_border &lt/span&gt
+      &lt/div&gt</code>
+    </pre>
+
+    <!-- Ratings - Regular -->
+    <h1>Rating Size - Regular</h1>
+    <div class="rating-container format">
+      <div class="rating sm">
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+      </div>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="rating sm"&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+      &lt/div&gt</code>
+    </pre>
+
+    <!-- Ratings - Large -->
+    <h1>Rating Size - Large</h1>
+    <div class="rating-container format">
+      <div class="rating-lg">
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star_half </span>
+        <span class="material-icons rating-icon"> star_border </span>
+      </div>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="rating-lg"&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star_half &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star_border &lt/span&gt
+      &lt/div&gt</code>
+    </pre>
+
+    <!-- Ratings - Massive -->
+    <h1>Rating Size - Extra Large</h1>
+    <div class="rating-container format">
+      <div class="rating-xl">
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star </span>
+        <span class="material-icons rating-icon"> star_border </span>
+        <span class="material-icons rating-icon"> star_border </span>
+      </div>
+    </div>
+
+    <pre class="code"><code class="language-html">
+      &ltdiv class="rating-xl"&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star_border &lt/span&gt
+        &ltspan class="material-icons rating-icon"&gt star_border &lt/span&gt
+      &lt/div&gt
+    </code>
+    </pre>
+    
+  </div>
+
+  <!-- Prism JS -->
+  <script src="/docs/docs.js"></script>
+</body>
+
 </html>

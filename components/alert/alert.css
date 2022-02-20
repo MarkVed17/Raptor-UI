@@ -1,8 +1,10 @@
 .alerts-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  width: 80%;
+  width: 50%;
+  min-width: 20rem;
   padding: 2rem;
   margin: 1rem auto;
   background-color: var(--comp-container-color);
@@ -10,7 +12,7 @@
 
 .alert {
   width: 40%;
-  min-width: 18rem;
+  min-width: 12rem;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
 }

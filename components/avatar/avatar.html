@@ -1,110 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <title>Avatars</title>
-  </head>
-  <body>
-    <header class="header-nav">
-      <a href="/index.html" class="header-logo-link">
-        <img
-          class="header-logo-img"
-          src="/assets/jurassic-park-logo.png"
-          alt="jurassic-park-logo"
-        />
-        <p class="header-logo-name">Raptor UI</p>
-      </a>
-      <div class="header-nav-links">
-        <nav>
-          <ul>
-            <li><a href="#" class="header-link">Docs</a></li>
-            <li><a href="/components-list.html" class="header-link">Components</a></li>
-            <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="container">
-      <!-- Simple Avatars -->
-      <div class="avatars-container">
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-lg"
-        />
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-md"
-        />
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-sm"
-        />
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-xs"
-        />
-      </div>
 
-      <!-- Avatars with a border -->
-      <div class="avatars-container">
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-border avatar-lg"
-        />
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-border avatar-md"
-        />
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-border avatar-sm"
-        />
-        <img
-          src="/assets/velociraptor.png"
-          alt="raptor"
-          class="avatar-round avatar-border avatar-xs"
-        />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/main.css" />
+  <link href="/docs/docs.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <title>Avatars</title>
+</head>
 
-      <!-- Avatars with presence indicator -->
-      <div class="avatars-container avatar-indicator">
-        <div class="avatar-img avatar-status">
-            <img
-              src="/assets/velociraptor.png"
-              alt="raptor"
-              class="avatar-round avatar-lg"
-            />
-            <div class="rounded-circle online"></div>
-        </div>
-        <div class="avatar-img avatar-status">
-            <img
-              src="/assets/velociraptor.png"
-              alt="raptor"
-              class="avatar-round avatar-lg"
-            />
-            <div class="rounded-circle offline"></div>
-        </div>  
+<body>
+  <header class="header-nav">
+    <a href="/index.html" class="header-logo-link">
+      <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
+      <p class="header-logo-name">Raptor UI</p>
+    </a>
+    <div class="header-nav-links">
+      <nav>
+        <ul>
+          <li><a href="/docs.html" class="header-link">Docs</a></li>
+          <li><a href="/components-list.html" class="header-link">Components</a></li>
+          <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <!-- Avatar -->
+    <div class="component-headings">
+      <h1 class="component-name">Avatar</h1>
+      <p class="component-description">Avatars are used to show a thumbnail representation of an individual or business
+        in the interface.</p>
+    </div>
+
+    <!-- Simple Avatars -->
+    <h1>Simple Avatar</h1>
+    <div class="avatars-container">
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-lg" />
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-md" />
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-sm" />
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-xs" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-lg" /&gt
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-md" /&gt
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-sm" /&gt
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-xs" /&gt</code>
+    </pre>
+
+    <!-- Avatars with a border -->
+    <h1>Avatar with a border</h1>
+    <div class="avatars-container">
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-lg" />
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-md" />
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-sm" />
+      <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-xs" />
+    </div>
+
+    <pre class="code"><code class="language-html">
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-lg" /&gt
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-md" /&gt
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-sm" /&gt
+&ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-border avatar-xs" /&gt</code>
+    </pre>
+
+    <!-- Avatars with presence indicator -->
+    <h1>Avatar with a presence indicator</h1>
+    <div class="avatars-container avatar-indicator">
+      <div class="avatar-img avatar-status">
+        <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-lg" />
+        <div class="rounded-circle online"></div>
       </div>
-      
-      <!-- Anonymous Avatar -->
-      <div class="avatars-container avatar-anonymous">
-        <div class="avatar-round default-avatar avatar-lg">A</div>
-        <div class="avatar-round default-avatar avatar-md">AB</div>
-        <div class="avatar-round default-avatar avatar-sm">X</div>
-        <div class="avatar-round default-avatar avatar-xs">M</div>
-      </div>
+      <div class="avatar-img avatar-status">
+        <img src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-lg" />
+        <div class="rounded-circle offline"></div>
       </div>
     </div>
-  </body>
+
+    <pre class="code"><code class="language-html">
+&ltdiv class="avatar-indicator"&gt
+  &ltdiv class="avatar-img avatar-status"&gt
+    &ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-lg" /&gt
+    &ltdiv class="rounded-circle online"&gt&lt/div&gt
+  &lt/div&gt
+  &ltdiv class="avatar-img avatar-status"&gt
+    &ltimg src="/assets/velociraptor.png" alt="raptor" class="avatar-round avatar-lg" /&gt
+    &ltdiv class="rounded-circle offline"&gt&lt/div&gt
+  &lt/div&gt
+&lt/div&gt</code>
+    </pre>
+
+    <!-- Anonymous Avatar -->
+    <h1>Anonymous Avatar</h1>
+    <div class="avatars-container avatar-anonymous">
+      <div class="avatar-round default-avatar avatar-lg">A</div>
+      <div class="avatar-round default-avatar avatar-md">AB</div>
+      <div class="avatar-round default-avatar avatar-sm">X</div>
+      <div class="avatar-round default-avatar avatar-xs">M</div>
+    </div>
+
+    <pre class="code">
+      <code class="language-html">
+&ltdiv class="avatar-anonymous"&gt
+  &ltdiv class="avatar-round default-avatar avatar-lg"&gtA&lt/div&gt
+  &ltdiv class="avatar-round default-avatar avatar-md"&gtAB&lt/div&gt
+  &ltdiv class="avatar-round default-avatar avatar-sm"&gtX&lt/div&gt
+  &ltdiv class="avatar-round default-avatar avatar-xs"&gtM&lt/div&gt
+&lt/div&gt</code>
+    </pre>
+
+  </div>
+
+  <!-- Prism JS -->
+  <script src="/docs/docs.js"></script>
+</body>
+
 </html>
