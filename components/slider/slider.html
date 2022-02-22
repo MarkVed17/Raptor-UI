@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/main.css" />
+    <link href="/docs/docs.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>Slider</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <a href="/index.html" class="header-logo-link">
+            <img class="header-logo-img" src="/assets/jurassic-park-logo.png" alt="jurassic-park-logo" />
+            <p class="header-logo-name">Raptor UI</p>
+        </a>
+        <div class="header-nav-links">
+            <nav>
+                <ul>
+                    <li><a href="/docs.html" class="header-link">Docs</a></li>
+                    <li><a href="/components-list.html" class="header-link">Components</a></li>
+                    <li><a href="https://github.com/MarkVed17/raptor-ui" class="header-link">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Slider -->
+        <div class="component-headings">
+            <h1 class="component-name">Slider</h1>
+            <p class="component-description">Sliders are used by users to search or filter something in a particular
+                range or at a particular value.</p>
+        </div>
+
+        <!-- Range Slider -->
+        <h1>Range Slider</h1>
+
+        <div class="slider-container">
+            <h3 class="slider-type">Price Range</h3>
+            <p>Use slider or enter min & max price.</p>
+            <div class="slider-input">
+                <div class="slider-field">
+                    <span>Min</span>
+                    <input type="number" name="input-min" id="input-min" class="input standard input-min" value="2500" />
+                </div>
+                -
+                <div class="slider-field">
+                    <span>Max</span>
+                    <input type="number" name="input-max" id="input-max" class="input standard input-max" value="7500" />
+                </div>
+            </div>
+            <div class="slider-range">
+                <div class="progress"></div>
+                <input type="range" name="range-min" id="range-min" class="range-min" min="0" max="10000" value="2500"
+                    step="100" />
+                <input type="range" name="range-max" id="range-max" class="range-max" min="0" max="10000" value="7500"
+                    step="100" />
+            </div>
+        </div>
+
+        <pre class="code"><code class="language-html">
+    &ltdiv class="slider-container"&gt
+        &lth3 class="slider-type"&gtPrice Range&lt/h3&gt
+        &ltp&gtUse slider or enter min & max price.&lt/p&gt
+        &ltdiv class="slider-input"&gt
+            &ltdiv class="slider-field"&gt
+                &ltspan&gtMin&lt/span&gt
+                &ltinput type="number" name="input-min" id="input-min" class="input input-min" value="2500" /&gt
+            &lt/div&gt
+            -
+            &ltdiv class="slider-field"&gt
+                &ltspan&gtMax&lt/span&gt
+                &ltinput type="number" name="input-max" id="input-max" class="input input-max" value="7500" /&gt
+            &lt/div&gt
+        &lt/div&gt
+        &ltdiv class="slider-range"&gt
+            &ltdiv class="progress"&gt&lt/div&gt
+            &ltinput type="range" name="range-min" id="range-min" class="range-min" min="0" max="10000" value="2500"
+                step="100" /&gt
+            &ltinput type="range" name="range-max" id="range-max" class="range-max" min="0" max="10000" value="7500"
+                step="100" /&gt
+        &lt/div&gt
+    &lt/div&gt</code>
+        </pre>
+
+    </div>
+
+    <!-- Prism JS -->
+    <script src="/docs/docs.js"></script>
+    <script src="slider.js"></script>
+</body>
+
+</html>
