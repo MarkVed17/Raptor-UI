@@ -1,0 +1,49 @@
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 50%;
+  padding: 2rem;
+  margin: 1rem auto;
+  background-color: var(--comp-container-color);
+}
+
+.list-ordered {
+  list-style: decimal;
+}
+
+.list-simple {
+  list-style: none;
+}
+
+.list-simple > li {
+  padding: 1rem 2rem;
+  background-color: var(--body-bg-color);
+  border-bottom: 1px solid var(--comp-container-color);
+  cursor: pointer;
+}
+
+.list-stacked {
+  list-style: none;
+}
+
+.list-stacked > li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 20rem;
+  padding: 1rem 1.2rem;
+  background-color: var(--body-bg-color);
+  border-bottom: 1px solid var(--comp-container-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list-message {
+  font-weight: 100;
+  font-size: 1rem;
+  padding-top: 5px;
+}
