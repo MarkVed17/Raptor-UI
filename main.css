@@ -12,6 +12,7 @@
 @import url(/components/grid/grid.css);
 @import url(/components/slider/slider.css);
 @import url(/components/list/list.css);
+@import url(/components/modal/modal.css);
 
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
