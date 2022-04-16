@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link href="/docs/docs.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>Toast</title>
+  </head>
+
+  <body>
+    <header class="header-nav">
+      <a href="/index.html" class="header-logo-link">
+        <img
+          class="header-logo-img"
+          src="/assets/jurassic-park-logo.png"
+          alt="jurassic-park-logo"
+        />
+        <p class="header-logo-name">Raptor UI</p>
+      </a>
+      <div class="header-nav-links">
+        <nav>
+          <ul>
+            <li><a href="/docs.html" class="header-link">Docs</a></li>
+            <li>
+              <a href="/components-list.html" class="header-link">Components</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/MarkVed17/raptor-ui"
+                class="header-link"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Toast -->
+      <div class="component-headings">
+        <h1 class="component-name">Toast</h1>
+        <p class="component-description">
+          A toast can be used to push notifications to the users.
+        </p>
+      </div>
+
+      <!-- Baseline Toast -->
+      <h1>Baseline Toast</h1>
+      <div class="toast-container">
+        <button
+          class="btn btn-brand btn-accent showToast-btn"
+          id="baseline-btn"
+          data-button="baseline"
+        >
+          Show Toast
+        </button>
+
+        <div id="baseline-toast" class="toast baseline-toast">
+          <span class="toast-text">Message not sent. Retry in 5 seconds.</span>
+          <div class="toast-actions">
+            <button class="toast-btn">Retry</button>
+            <span
+              id="baseline-toast-close"
+              class="material-icons toast-icon"
+              data-toast="baseline"
+            >
+              close
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <pre class="code"><code class="language-html">
+&ltbutton
+  class="btn btn-brand btn-accent showToast-btn"
+  id="baseline-btn"
+  data-button="baseline"
+&gt
+  Show Toast
+&lt/button&gt
+
+&ltdiv id="baseline-toast" class="toast baseline-toast"&gt
+  &ltspan class="toast-text"&gtMessage not sent. Retry in 5 seconds.&lt/span&gt
+  &ltdiv class="toast-actions"&gt
+    &ltbutton class="toast-btn"&gtRetry&lt/button&gt
+    &ltspan
+      id="baseline-toast-close"
+      class="material-icons toast-icon"
+      data-toast="baseline"
+    &gt
+      close
+    &lt/span&gt
+  &lt/div&gt
+&lt/div&gt</code>
+      </pre>
+
+      <!-- Leading Toast -->
+      <h1>Leading Toast</h1>
+      <div class="toast-container">
+        <button
+          class="btn btn-brand btn-accent showToast-btn"
+          id="leading-btn"
+          data-button="leading"
+        >
+          Show Toast
+        </button>
+
+        <div id="leading-toast" class="toast leading-toast">
+          <span class="toast-text">Saved as a draft.</span>
+          <div class="toast-actions">
+            <button class="toast-btn">Undo</button>
+            <span
+              id="leading-toast-close"
+              class="material-icons toast-icon"
+              data-toast="leading"
+            >
+              close
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <pre class="code"><code class="language-html">
+&ltbutton
+  class="btn btn-brand btn-accent showToast-btn"
+  id="leading-btn"
+  data-button="leading"
+&gt
+  Show Toast
+&lt/button&gt
+
+&ltdiv id="leading-toast" class="toast leading-toast"&gt
+  &ltspan class="toast-text"&gtSaved as a draft.&lt/span&gt
+  &ltdiv class="toast-actions"&gt
+    &ltbutton class="toast-btn"&gtUndo&lt/button&gt
+    &ltspan
+      id="leading-toast-close"
+      class="material-icons toast-icon"
+      data-toast="leading"
+    &gt
+      close
+    &lt/span&gt
+  &lt/div&gt
+&lt/div&gt</code>
+      </pre>
+
+      <!-- Stacked Toast -->
+      <h1>Stacked Toast</h1>
+      <div class="toast-container">
+        <button
+          class="btn btn-brand btn-accent showToast-btn"
+          id="stacked-btn"
+          data-button="stacked"
+        >
+          Show Toast
+        </button>
+
+        <div id="stacked-toast" class="toast stacked-toast">
+          <span class="toast-text"
+            >This item already has the label "travel". You can add a new
+            label.</span
+          >
+          <div class="toast-actions">
+            <button class="toast-btn">Add a new label</button>
+            <span
+              id="stacked-toast-close"
+              class="material-icons toast-icon"
+              data-toast="stacked"
+            >
+              close
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <pre class="code"><code class="language-html">
+&ltbutton
+  class="btn btn-brand btn-accent showToast-btn"
+  id="stacked-btn"
+  data-button="stacked"
+&gt
+  Show Toast
+&lt/button&gt
+
+&ltdiv id="stacked-toast" class="toast stacked-toast"&gt
+  &ltspan class="toast-text"
+    &gtThis item already has the label "travel". You can add a new
+    label.&lt/span
+  &gt
+  &ltdiv class="toast-actions"&gt
+    &ltbutton class="toast-btn"&gtAdd a new label&lt/button&gt
+    &ltspan
+      id="stacked-toast-close"
+      class="material-icons toast-icon"
+      data-toast="stacked"
+    &gt
+      close
+    &lt/span&gt
+  &lt/div&gt
+&lt/div&gt</code>
+        </pre>
+    </div>
+
+    <!-- Prism JS -->
+    <script src="/docs/docs.js"></script>
+    <!-- Toast JS -->
+    <script src="./toast.js"></script>
+  </body>
+</html>
