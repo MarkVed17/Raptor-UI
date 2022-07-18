@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link href="/docs/docs.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>List</title>
+  </head>
+
+  <body>
+    <header class="header-nav">
+      <a href="/index.html" class="header-logo-link">
+        <img
+          class="header-logo-img"
+          src="/assets/jurassic-park-logo.png"
+          alt="jurassic-park-logo"
+        />
+        <p class="header-logo-name">Raptor UI</p>
+      </a>
+      <div class="header-nav-links">
+        <nav>
+          <ul>
+            <li><a href="/docs.html" class="header-link">Docs</a></li>
+            <li>
+              <a href="/components-list.html" class="header-link">Components</a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/MarkVed17/raptor-ui"
+                class="header-link"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Image -->
+      <div class="component-headings">
+        <h1 class="component-name">List</h1>
+        <p class="component-description">
+          A list can be used to display content related to a single subject. The
+          content can consist of multiple elements of varying type and size.
+        </p>
+      </div>
+
+      <!-- Ordered List -->
+      <h1>Ordered List</h1>
+      <div class="list-container">
+        <ul class="list-ordered">
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ul>
+      </div>
+
+      <pre class="code"><code class="language-html">
+&ltul class="list-ordered"&gt
+    &ltli&gtList Item&lt/li&gt
+    &ltli&gtList Item&lt/li&gt
+    &ltli&gtList Item&lt/li&gt
+&lt/ul&gt</code>
+      </pre>
+
+      <!-- Unordered List -->
+      <h1>Unordered List</h1>
+      <div class="list-container">
+        <ul class="list-unordered">
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ul>
+      </div>
+
+      <pre class="code"><code class="language-html">
+&ltul class="list-unordered"&gt
+    &ltli&gtList Item&lt/li&gt
+    &ltli&gtList Item&lt/li&gt
+    &ltli&gtList Item&lt/li&gt
+&lt/ul&gt</code>
+        </pre>
+
+      <!-- Simple List -->
+      <h1>Simple List</h1>
+      <div class="list-container">
+        <ul class="list-simple">
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ul>
+      </div>
+
+      <pre class="code"><code class="language-html">
+&ltul class="list-simple"&gt
+    &ltli&gtList Item&lt/li&gt
+    &ltli&gtList Item&lt/li&gt
+    &ltli&gtList Item&lt/li&gt
+&lt/ul&gt</code>
+      </pre>
+
+      <!-- Stacked List -->
+      <h1>Stacked List</h1>
+      <div class="list-container">
+        <ul class="list-stacked">
+          <li>
+            <img
+              src="/assets/velociraptor.png"
+              alt="raptor"
+              class="avatar-round avatar-sm"
+            />
+            <div>
+              Blue
+              <p class="list-message">Hey Owen, got me food?</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="/assets/velociraptor.png"
+              alt="raptor"
+              class="avatar-round avatar-sm"
+            />
+            <div>
+              Charlie
+              <p class="list-message">Just wait for it, Blue.</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="/assets/velociraptor.png"
+              alt="raptor"
+              class="avatar-round avatar-sm"
+            />
+            <div>
+              Delta
+              <p class="list-message">Get outta my way you!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <pre class="code"><code class="language-html">
+&ltul class="list-stacked"&gt
+    &ltli&gt
+        &ltimg
+        src="/assets/velociraptor.png"
+        alt="raptor"
+        class="avatar-round avatar-sm"
+        /&gt
+        &ltdiv&gt
+        Blue
+        &ltp class="list-message"&gtHey Owen, got me food?&lt/p&gt
+        &lt/div&gt
+    &lt/li&gt
+    &ltli&gt
+        &ltimg
+        src="/assets/velociraptor.png"
+        alt="raptor"
+        class="avatar-round avatar-sm"
+        /&gt
+        &ltdiv&gt
+        Charlie
+        &ltp class="list-message"&gtWait for it, Blue.&lt/p&gt
+        &lt/div&gt
+    &lt/li&gt
+    &ltli&gt
+        &ltimg
+        src="/assets/velociraptor.png"
+        alt="raptor"
+        class="avatar-round avatar-sm"
+        /&gt
+        &ltdiv&gt
+        Delta
+        &ltp class="list-message"&gtGet outta my way!&lt/p&gt
+        &lt/div&gt
+    &lt/li&gt
+    &lt/ul&gt</code>
+    </pre>
+    </div>
+
+    <!-- Prism JS -->
+    <script src="/docs/docs.js"></script>
+  </body>
+</html>
