@@ -1,7 +1,7 @@
 
 # Raptor UI
 
-An open source design system for building modern websites and applications. Create an efficient and enjoyable jurassic experience.
+An open source design system for building modern websites and applications. Create an efficient and enjoyable jurassic experience 🦕
 
 ## Live Preview
 https://raptor-ui.netlify.app
@@ -30,11 +30,15 @@ Or paste the following import statement at the beginning of your CSS file:
 - [Navigation](https://raptor-ui.netlify.app/components/navbar/navbar.html)
 - [Rating](https://raptor-ui.netlify.app/components/rating/rating.html)
 - [Typography](https://raptor-ui.netlify.app/components/typography/typography.html)
+- [Toast](https://raptor-ui.netlify.app/components/toast/toast.html)
+- [Modal](https://raptor-ui.netlify.app/components/modal/modal.html)
+- [List](https://raptor-ui.netlify.app/components/list/list.html)
 
 
 ## Technologies Used
 - HTML
 - CSS
+- JS
 
 ## Author
 [@MarkVed17](https://github.com/MarkVed17)
