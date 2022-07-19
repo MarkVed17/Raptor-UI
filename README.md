@@ -1,7 +1,7 @@
 
 # Raptor UI | Component Library inspired by Jurassic Park 🦕
 
-An open source design system for building modern websites and applications. Create an efficient and enjoyable jurassic experience 🦕
+An open-source design system for building modern websites and applications. Create an efficient and enjoyable Jurassic experience 🦕
 
 ## Live Preview
 https://raptor-ui.netlify.app
